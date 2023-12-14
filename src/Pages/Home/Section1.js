@@ -9,6 +9,7 @@ function Section1() {
   <Row>
     <Col lg= {7} className='mb-5 mb-lg-0'>
         <div className='position:relative'>
+          {/* image */}
            <img src={Burger} className='img-fluid' alt='Hero' />
         </div>
     </Col>
