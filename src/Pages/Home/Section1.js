@@ -1,4 +1,4 @@
-import React from 'react';
+import React  from 'react';
 import { Container , Row , Col } from 'react-bootstrap';
 import Burger from "../../assets/hero/hero-2.png";
 import { Link } from 'react-router-dom';
