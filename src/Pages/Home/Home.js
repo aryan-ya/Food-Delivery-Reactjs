@@ -3,6 +3,7 @@ import React from 'react';
  import "../../Styles/HomeStyle.css";
 import Section1 from './Section1';
 import  Section2  from './Section2';
+import Section3 from './Section3';
 
 function Home() {
   return (
@@ -12,6 +13,9 @@ function Home() {
  <Section1 />
  {/* home section about */}
  <Section2 />
+
+ {/* home section menu */}
+ <Section3 />
    </Layout>
   
   
