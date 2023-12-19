@@ -143,15 +143,76 @@
 }.menu_section  .menu_price h5{
     color: var(--yellow);
     font-size: 1rem;
+}.menu_section .add_to_card a {
+    background: var(--yellow);
+    display: inline-block;
+    font-size: 1rem;
+    line-height: 1;
+    font-weight: 700;
+    padding: 8px 14px;
+    border-radius: 4px;
+    opacity: 0;
+    transform: translateY(100px);
+    -webkit-transition: all 500ms ease-in-out;
+    -moz-transition: all 500ms ease-in-out;
+    -ms-transistion: all 500ms ease-in-out;
+    -o-transition: all 500ms ease-in-out;
+    transition: all 500ms ease-in-out;
 }
 .add_to_card i{
     padding-right: 5px;
+}.menu_section  .card:hover .card-img-top{
+    transform: scale(1.1);
+}.menu_section  .card:hover .add_to_card a{
+    transform: translateY(0px);
+    opacity: 1;
+}.menu_section .ads_box{
+    text-align: right;
+    padding: 85px 35px 50px;
+    border-radius: 6px;
+}.menu_section .ads_img1{
+    background: url("../assets/menu/ads-1.jpg") no-repeat center center;
+    background-size: cover;
+}.menu_section .ads_img2{
+    background: url("../assets/menu/ads-1.jpg") no-repeat center center;
+    background-size: cover;
+}.menu_section .ads_box h4{
+    font-size: 2.5rem;
+    font-weight: 300;
+    color: var(--brown);
+
+}.menu_section .ads_box h5{
+    font-size: 2.375rem;
+    color: var(--brown);
+}.menu_section .ads_box a{
+    margin-top: 15px;
+    font-size: 18px;
+}.items_rating{
+    color: var(--yellow);
 }
 
+/* home promortion */
+.promotion_section{
+ padding-top: 60px;
+ padding-bottom: 60px;
+ background: var(--light-grey);
+}.promotion_section h2{
+    font-size: 3.5rem;
+    margin-bottom: 25px;
+}.promotion_section p{
+    font-size: 1.125rem;
+}.promotion_section ul{
+    padding-left: 15px;
+}
 
-
-
-
+/* home parrallax 5.0 */
+.bg_parallax_scroll{
+    background: url("../assets/parallax/bg.jpg") no-repeat center center;
+    background-size: cover;
+    background-attachment: fixed;
+    width: 100%;
+    height: 700px;
+}
 
 
 
@@ -171,6 +232,16 @@
 
 
 /* media query mobile */
+
+
+@media (max-width:1200px) {
+    /* home promotion 4.0 */
+    .promotion_section h2{
+        font-size: 2.25rem;
+
+    }
+    
+}
 @media (max-width:992px) {
     /* home hero  */
     .hero_section  h2{
@@ -181,13 +252,20 @@
     }.about_box p{
         padding: 0;
     }
+    /* home parralax 5 */
+    .bg_parallax_scroll{
+        background-attachment: scroll;
+        height: 500px;
+    }
 }
 
 @media (max-width:767px) {
-    /* home hero  */
+    /* home hero 1.0 */
     .hero_section .hero_text h1{
         font-size: 5.5rem;
         
+    }.menu_section .para{
+        padding: 10px 0px;
     }
 }
 
