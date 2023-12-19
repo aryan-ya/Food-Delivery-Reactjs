@@ -8,6 +8,8 @@ import Image5 from "../../assets/menu/burger-15.jpg";
 import Image6 from "../../assets/menu/burger-16.jpg";
 import Image7 from "../../assets/menu/burger-17.jpg";
 import Image8 from "../../assets/menu/burger-18.jpg";
+import Cards from '../../Commponents/Layouts/Cards';
+
 // Mock Data Cards
 const mockData = [
     {
@@ -78,18 +80,27 @@ const mockData = [
   ];
 function Section3() {
   return (
-   <section className='menu_section'>
+   <section className="menu_section">
     <Container>
         <Row>
-            <Col lg= {{span:8, offset:2}}>
+            <Col lg= {{span:8, offset:2}} className="text-center mb-5">
                 <h2>OUR CRAZY BURGERS</h2>
-                <p className='para'> Aliquam a augue suscipit, luctus neque purus ipsum neque undo
+                <p className="para"> Aliquam a augue suscipit, luctus neque purus ipsum neque undo
               dolor primis libero tempus, blandit a cursus varius magna</p>
             </Col>
         </Row>
         <Row>
             {mockData.map((cardData, index) =>(
-                
+               <Cards 
+               key={index}
+               image = {cardData.image}
+               rating = {cardData.rating}
+               title = {cardData.title}
+               paragraph = {cardData.paragraph}
+               price = {cardData.price}
+              //  renderRatingIcons = {renderRatingIcons}
+               
+               />
             ))}
         </Row>
     </Container>
